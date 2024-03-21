@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop de Fotografia</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            position: relative;
+            font-family: Arial, sans-serif; 
+        }
+
+        .content-container {
+            text-align: center;
+            padding-top: 20px;
+            padding-left: 20px; 
+        }
+
+        .title-company {
+            margin-bottom: 10px;
+        }
+
+        .content-title, .privacy-policy h3 {
+            font-size: 25px;
+            font-weight: bold;
+            color: #BD93F9;
+            margin-bottom: 10px; 
+            margin-right: 10px;
+        }
+
+        .content-title {
+            position: absolute;
+            top: -1%; 
+            left: 20%; 
+            transform: translate(-50%, -50%);
+        }
+
+        .content-wrapper {
+            position: absolute;
+            top: 60%; 
+            left: 5%;
+            transform: translateY(-50%);
+            color: #FFFFFF; 
+        }
+
+        .info-text {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 40px; 
+            text-align: left;
+        }
+
+        .privacy-policy {
+            text-align: left;
+        }
+
+        .custom-button {
+            display: inline-block;
+            background-color: #BD93F9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .title {
+            text-align: right; 
+            margin-right: 5%; 
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20%; 
+            background-image: url('eae0f'); 
+            background-size: cover;
+            background-position: center;
+            z-index: -1; 
+        }
+
+        .header-image {
+            width: 35%; 
+            height: auto; 
+            margin-top: 0px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <div class="text-center content-container">
+        <img src="~/eae0f6c8d54cb0cd2625e751df4d65b0.jpg" alt="Imagem de exemplo" class="header-image">
+    </div>
+
+    <div class="content-wrapper">
+        <p class="content-title title">Aprenda Técnicas Avançadas de Fotografia</p>
+
+        <div class="info-text">
+            <p>Descubra os segredos dos mestres da fotografia em nosso workshop intensivo. Aprenda técnicas avançadas de composição, iluminação e edição de fotos com instrutores experientes que compartilharão seus conhecimentos e experiências práticas.</p>
+            <p>Nosso workshop é projetado para fotógrafos de todos os níveis, desde iniciantes que desejam dominar as habilidades básicas até profissionais que buscam aprimorar sua arte e expandir seus horizontes criativos.</p>
+            <p>Além de aulas teóricas envolventes, oferecemos sessões práticas onde você terá a oportunidade de aplicar o que aprendeu em cenários reais, sob a orientação e feedback personalizado de nossos instrutores.</p>
+        </div>
+
+        <div class="privacy-policy">
+            <h3>Por que Participar do Nosso Workshop?</h3>
+            <p>- Acesso a técnicas avançadas de fotografia que podem elevar seu trabalho para o próximo nível.</p>
+            <p>- Interação com profissionais experientes que compartilharão dicas valiosas e truques do ofício.</p>
+            <p>- Oportunidade de expandir sua rede de contatos e conectar-se com outros entusiastas da fotografia.</p>
+            <p>- Feedback personalizado para ajudá-lo a identificar áreas de melhoria e desenvolver seu próprio estilo único.</p>
+        </div>
+
+        <button class="custom-button">Sobre nós</button>
+    </div>
+</body>
+</html>

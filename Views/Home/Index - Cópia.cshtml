@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            position: relative;
+        }
+
+        .content-container {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .title-company {
+            font-size: 70px;
+            font-weight: 600;
+            font-family: 'Berkshire Swash', cursive;
+            color: #BD93F9;
+            margin-bottom: 10px;
+        }
+
+        .title-photography {
+            font-size: 32px;
+            font-weight: 300;
+            font-family: 'Abril Fatface', cursive;
+            color: #FFFFFF;
+            margin-top: -20px;
+            margin-right: -130px; /* Mover a palavra "DA Fotografia" para a direita */
+        }
+
+        .footer-img {
+            width: 100%;
+            height: 70px;
+            display: block;
+            position: absolute;
+            bottom: 8%;
+            object-fit: cover;
+            object-position: center 53%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .content-title {
+            font-size: 40px;
+            position: absolute;
+            top: -20%; /* Ajuste para baixo */
+            left: -20%;
+            font-weight: bold;
+            color: #BD93F9;
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+
+        .content-wrapper {
+            position: absolute;
+            top: 60%; /* Ajuste para baixo */
+            left: 5%;
+            transform: translateY(-50%);
+        }
+
+        .icon-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+            .icon-list li {
+                margin-bottom: -5x; /* Reduzir o espaçamento entre as palavras */
+                font-size: 18px;
+                color: #FFFFFF;
+            }
+
+                .icon-list li::before {
+                    content: "° ";
+                    color: #BD93F9;
+                    margin-right: 5px;
+                }
+
+        /* Novo CSS para caixa de texto e botão */
+        .custom-textbox {
+            display: inline-block;
+            background-color: #BD93F9;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .special-text {
+            color: red;
+            font-weight: bold;
+        }
+
+        .custom-button {
+            display: inline-block;
+            background-color: #BD93F9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            /* Posicionamento absoluto removido */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text-center content-container">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4 title-company">Companhia</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-right">
+                <h1 class="title-photography">DA Fotografia</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <p class="content-title">CONTEÚDO</p>
+
+        <ul class="icon-list">
+            <li>Pós venda</li>
+            <li>Entrega</li>
+            <li>Concorrência</li>
+            <li>Prática guiada</li>
+            <li>Prática assistida</li>
+            <li>Tratamento de imagens</li>
+            <li>Work Flow</li>
+            <li>Pós produção</li>
+            <li>Divulgação</li>
+        </ul>
+
+        <!-- Botão movido para dentro do content-wrapper -->
+        <button class="custom-button">SAIBA MAIS!</button>
+    </div>
+
+    <!-- Imagem de rodapé mantida fora do content-wrapper -->
+    <img class="footer-img" src="~/sss.jpg" alt="Imagem de rodapé">
+</body>
+</html>
